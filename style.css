@@ -69,12 +69,12 @@ header {
 }
 
 /* Nav Menu */
-header  ul {
+header nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
-header ul li a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
