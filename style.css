@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+  font-size: 18px;
+}
+
 
 /* ===== BODY WITH ANIMATED GRADIENT ===== */
 body {
@@ -61,8 +65,13 @@ header {
 
 /* Logo */
 .logo img {
-    height: 100px;
+    margin: 20px;
+    height: 5rem;
     transition: transform 0.3s ease;
+}
+.new{
+    display: flex;
+    
 }
 .logo img:hover {
     transform: scale(1.1) rotate(3deg);
@@ -104,7 +113,7 @@ main {
     padding: 6rem 2rem;
 }
 main div img {
-    height: 200px;
+    height: 20rem;
     margin-bottom: 1rem;
 }
 main div p {
@@ -124,14 +133,16 @@ main.fade-in div p {
 }
 
 /* Subjects List */
-main ul {
+main section ul   {
     list-style: none;
-    display: flex;
     gap: 1.5rem;
     justify-content: center;
-    margin-top: -5rem;
+    margin-top: 1rem;
+    /* display: block; */
+    /* visibility: hidden; */
+    
 }
-main ul  a {
+main section ul  a {
     padding: 0.6rem 1.4rem;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
@@ -140,8 +151,10 @@ main ul  a {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    margin: 10px;
+    
 }
-main ul  a:hover {
+main ul a:hover {
     background: linear-gradient(90deg, #ff8a00, #e52e71);
     transform: translateY(-3px);
 }
